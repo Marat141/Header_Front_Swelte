@@ -2,6 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import { page } from '$app/stores';
 	import Header from "../lib/components/Header.svelte";
+	import Footer from "../lib/Components/Footer.svelte";
 
 	const { children } = $props();
 
@@ -15,6 +16,7 @@
 </script>
 
 <Header />
+
 
 {#key $page.url}
 	<main
@@ -35,3 +37,5 @@
     }
 
 </style>
+
+<Footer></Footer>
